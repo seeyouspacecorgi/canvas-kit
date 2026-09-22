@@ -535,7 +535,7 @@ body .canvas-node.canvas-pencil-ink .canvas-node-container {
    highlighter stroke). Uncolored strokes keep their drawn color (inline style). */
 body .canvas-node.canvas-pencil-ink[class*="mod-canvas-color"] .canvas-node-content svg,
 body .canvas-node.canvas-pencil-ink[style*="--canvas-color"] .canvas-node-content svg {
-	color: rgb(var(--canvas-color));
+	color: var(--canvas-color);
 }
 
 /* hide the resting shadow but keep Obsidian's focus/selection shadow alive —
@@ -701,7 +701,7 @@ body .canvas-node.canvas-pencil-text[class*="mod-canvas-color"] .canvas-node-con
 body .canvas-node.canvas-pencil-text[class*="mod-canvas-color"] .canvas-node-content .markdown-rendered,
 body .canvas-node.canvas-pencil-text[style*="--canvas-color"] .canvas-node-content .markdown-preview-view,
 body .canvas-node.canvas-pencil-text[style*="--canvas-color"] .canvas-node-content .markdown-rendered {
-	color: rgb(var(--canvas-color));
+	color: var(--canvas-color);
 }
 
 /* Text is PURE TEXT — never a card. Kill every frame/background/shadow/outline
